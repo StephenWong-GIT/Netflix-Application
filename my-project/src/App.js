@@ -1,4 +1,6 @@
+import { Route, Routes} from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -6,6 +8,9 @@ function App() {
     {/* ctrl + spacebar will bring up dialogue, will always prompt you */}
 
     <Navbar />
+    <Routes>
+      <Route Path='/' element={<Home />} />
+    </Routes>
     </>
   );
 }

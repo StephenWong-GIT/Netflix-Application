@@ -4,7 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex items-center justify-between p-4 z-[100]'>
+    <div className='flex items-center justify-between p-4 z-[100] w-full absolute'>
 
         {/* putting the 100 in brackets because z-100 does not exist in tailwind and whenever you want to put a value
         in tailwind we can replace it with brackets to enter our own values */}
