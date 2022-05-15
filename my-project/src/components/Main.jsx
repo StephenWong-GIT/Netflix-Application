@@ -5,8 +5,7 @@ import requests from '../Requests'
 const Main = () => {
     const [movies, setMovies] = useState([])
 
-    const movie = movies [Math.floor(Math.random() * movies.length)]
-
+    const movie = movies [Math.random() * movies.length]
 
     useEffect(()=> {
         axios.get(requests.requestPopular).then((response)=>{
@@ -16,7 +15,11 @@ const Main = () => {
     console.log(movies)
 
   return (
-    <div>Main</div>
+    <div className='w-full h-[550px] text-white'>
+        <div className='w-full h-full'>
+            <img src={""} alt={movie?.title} />
+        </div>
+    </div>
   )
 }
 
